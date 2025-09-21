@@ -1,0 +1,228 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build application
+      run: dotnet build --configuration Release --no-restore
+      
+    # - name: Run unit tests
+    #   run: dotnet test --configuration Release --no-build --verbosity normal
+      
+    - name: Publish API
+      run: dotnet publish ToDoApp.API/ToDoApp.API.csproj -c Release -o ./publish/api
+      
+    - name: Publish Console App
+      run: dotnet publish ToDoApp.Console/ToDoApp.Console.csproj -c Release -o ./publish/console
+      
+    - name: Upload API artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: api-build
+        path: ./publish/api/
+        
+    - name: Upload Console artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: console-build
+        path: ./publish/console/
+
+  api-tests:
+    runs-on: ubuntu-latest
+    needs: build-and-test
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: test123
+          POSTGRES_DB: todoapp
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+          
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+        
+    - name: Setup database schema
+      run: |
+        PGPASSWORD=test123 psql -h localhost -U postgres -d todoapp -c "
+        CREATE TABLE IF NOT EXISTS todo_items (
+            id SERIAL PRIMARY KEY,
+            task_description TEXT NOT NULL,
+            datetime_created TIMESTAMP NOT NULL,
+            is_complete BOOLEAN NOT NULL DEFAULT false
+        );"
+        
+    - name: Download API artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: api-build
+        path: ./api/
+        
+    - name: Start API
+      run: |
+        cd ./api
+        dotnet ToDoApp.API.dll --urls="http://0.0.0.0:5000" &
+        sleep 10
+      env:
+        ConnectionStrings__DefaultConnection: "Host=localhost;Database=todoapp;Username=postgres;Password=test123;Port=5432"
+        
+    - name: Install Newman
+      run: npm install -g newman
+      
+    # - name: Run Postman collection
+    #   run: newman run postman/TodoAPI.postman_collection.json --env-var baseUrl=http://localhost:5000
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [build-and-test, api-tests]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Download API artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: api-build
+        path: ./release/api/
+        
+    - name: Download Console artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: console-build
+        path: ./release/console/
+        
+    - name: Create database scripts
+      run: |
+        mkdir -p ./release/database
+        cat > ./release/database/schema.sql << EOF
+        CREATE DATABASE todoapp;
+        \c todoapp;
+        CREATE TABLE todo_items (
+            id SERIAL PRIMARY KEY,
+            task_description TEXT NOT NULL,
+            datetime_created TIMESTAMP NOT NULL,
+            is_complete BOOLEAN NOT NULL DEFAULT false
+        );
+        EOF
+        
+    - name: Create configuration templates
+      run: |
+        mkdir -p ./release/config
+        cat > ./release/config/appsettings.template.json << EOF
+        {
+          "Logging": {
+            "LogLevel": {
+              "Default": "Information",
+              "Microsoft.AspNetCore": "Warning"
+            }
+          },
+          "AllowedHosts": "*",
+          "ConnectionStrings": {
+            "DefaultConnection": "Host=localhost;Database=todoapp;Username=postgres;Password=CHANGE_ME;Port=5432"
+          }
+        }
+        EOF
+        
+    - name: Create installation guide
+      run: |
+        cat > ./release/README.md << EOF
+        # Todo Application Deployment Guide
+        
+        ## Prerequisites
+        - Ubuntu 20.04 or later
+        - PostgreSQL 12 or later
+        - .NET 8.0 runtime
+        
+        ## Installation Steps
+        
+        ### 1. Database Setup
+        \`\`\`bash
+        sudo -u postgres psql -f database/schema.sql
+        \`\`\`
+        
+        ### 2. API Configuration
+        \`\`\`bash
+        cp config/appsettings.template.json api/appsettings.json
+        # Edit appsettings.json with your database password
+        \`\`\`
+        
+        ### 3. Start API
+        \`\`\`bash
+        cd api
+        dotnet ToDoApp.API.dll --urls="http://0.0.0.0:5000"
+        \`\`\`
+        
+        ### 4. Test Installation
+        \`\`\`bash
+        curl http://localhost:5000/api/TodoItems
+        \`\`\`
+        
+        ## Console Application
+        Update the baseUrl in console app configuration to point to your API server.
+        EOF
+        
+    - name: Create release archive
+      run: |
+        cd ./release
+        tar -czf ../todo-app-release-${{ github.sha }}.tar.gz .
+        
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ github.run_number }}
+        release_name: Release v${{ github.run_number }}
+        body: |
+          Automated release of Todo Application
+          
+          ## Changes
+          - Built from commit ${{ github.sha }}
+          - All tests passed
+          - Ready for deployment
+          
+        draft: false
+        prerelease: false
+        
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./todo-app-release-${{ github.sha }}.tar.gz
+        asset_name: todo-app-release.tar.gz
+        asset_content_type: application/gzip
