@@ -29,10 +29,10 @@ jobs:
     #   run: dotnet test --configuration Release --no-build --verbosity normal
       
     - name: Publish API
-      run: dotnet publish ToDoApp.API/ToDoApp.API.csproj -c Release -o ./publish/api
+      run: dotnet publish TodoAPI/TodoAPI.csproj -c Release -o ./publish/api
       
     - name: Publish Console App
-      run: dotnet publish ToDoApp.Console/ToDoApp.Console.csproj -c Release -o ./publish/console
+      run: dotnet publish ConsoleAppHTTPClient/ConsoleAppHTTPClient.csproj -c Release -o ./publish/console
       
     - name: Upload API artifacts
       uses: actions/upload-artifact@v4
@@ -92,7 +92,7 @@ jobs:
     - name: Start API
       run: |
         cd ./api
-        dotnet ToDoApp.API.dll --urls="http://0.0.0.0:5000" &
+        dotnet TodoAPI.dll --urls="http://0.0.0.0:5000" &
         sleep 10
       env:
         ConnectionStrings__DefaultConnection: "Host=localhost;Database=todoapp;Username=postgres;Password=test123;Port=5432"
@@ -164,7 +164,7 @@ jobs:
         ## Prerequisites
         - Ubuntu 20.04 or later
         - PostgreSQL 12 or later
-        - .NET 8.0 runtime
+        - .NET 9.0 runtime
         
         ## Installation Steps
         
@@ -182,7 +182,7 @@ jobs:
         ### 3. Start API
         \`\`\`bash
         cd api
-        dotnet ToDoApp.API.dll --urls="http://0.0.0.0:5000"
+        dotnet TodoAPI.dll --urls="http://0.0.0.0:5000"
         \`\`\`
         
         ### 4. Test Installation
