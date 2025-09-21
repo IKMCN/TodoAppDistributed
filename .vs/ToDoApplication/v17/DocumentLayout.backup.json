@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1698250-289D-4704-9FA9-4C64BE51FF42}|ConsoleAppHTTPClient\\ConsoleAppHTTPClient.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\consoleapphttpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1698250-289D-4704-9FA9-4C64BE51FF42}|ConsoleAppHTTPClient\\ConsoleAppHTTPClient.csproj|solutionrelative:consoleapphttpclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E4C27ED-8172-4BAF-910D-58A7A86D3DE9}|Todo.Console\\Todo.Console.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todo.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E4C27ED-8172-4BAF-910D-58A7A86D3DE9}|Todo.Console\\Todo.Console.csproj|solutionrelative:todo.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapi\\todoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\todoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\tododatabasedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\tododatabasedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD1F1072-064A-4B83-8A13-E77D50E9BDC9}|TodoAPI\\TodoAPI.csproj|solutionrelative:todoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\todoapp.classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\todoapp.classlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\tododataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\tododataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\itododataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\itododataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|c:\\dev\\personallearning\\fundamentalspractice\\todolistapplicationfromfundamental\\todoapplication\\todoapp.classlibrary\\todomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C207E3D3-75C7-44AB-8A27-272F7D5F66E0}|ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj|solutionrelative:todoapp.classlibrary\\todomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ConsoleAppHTTPClient\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleAppHTTPClient\\Program.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ConsoleAppHTTPClient\\Program.cs",
+              "RelativeToolTip": "ConsoleAppHTTPClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T07:09:31.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Program.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\Program.cs",
+              "RelativeToolTip": "TodoAPI\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T06:54:59.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TodoAPI\\appsettings.json",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\appsettings.json",
+              "RelativeToolTip": "TodoAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T06:54:54.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\Todo.Console\\Program.cs",
+              "RelativeDocumentMoniker": "Todo.Console\\Program.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\Todo.Console\\Program.cs",
+              "RelativeToolTip": "Todo.Console\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:26:09.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TodoDatabaseDataAccess.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoDatabaseDataAccess.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\TodoDatabaseDataAccess.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoDatabaseDataAccess.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\TodoDatabaseDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T14:51:52.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoAPI",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\TodoAPI.csproj",
+              "RelativeDocumentMoniker": "TodoAPI\\TodoAPI.csproj",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\TodoAPI.csproj",
+              "RelativeToolTip": "TodoAPI\\TodoAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-21T06:57:03.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TodoItemsController.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\Controllers\\TodoItemsController.cs",
+              "RelativeDocumentMoniker": "TodoAPI\\Controllers\\TodoItemsController.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\TodoAPI\\Controllers\\TodoItemsController.cs",
+              "RelativeToolTip": "TodoAPI\\Controllers\\TodoItemsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T06:56:44.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ToDoApp.ClassLibrary",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\ToDoApp.ClassLibrary.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-20T14:49:30.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TodoDataAccess.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoDataAccess.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\TodoDataAccess.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoDataAccess.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\TodoDataAccess.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T13:26:57.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TodoModel.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoModel.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\TodoModel.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoModel.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\TodoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T13:26:59.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITodoDataAccess.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ITodoDataAccess.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\ITodoDataAccess.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ITodoDataAccess.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\ITodoDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T13:26:50.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ITodoService.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ITodoService.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\ITodoService.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\ITodoService.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\ITodoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T18:23:44.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoService.cs",
+              "RelativeDocumentMoniker": "ToDoApp.ClassLibrary\\TodoService.cs",
+              "ToolTip": "C:\\DEV\\PersonalLearning\\FundamentalsPractice\\ToDoListApplicationFromFundamental\\ToDoApplication\\ToDoApp.ClassLibrary\\TodoService.cs",
+              "RelativeToolTip": "ToDoApp.ClassLibrary\\TodoService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA9wDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T16:51:42.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

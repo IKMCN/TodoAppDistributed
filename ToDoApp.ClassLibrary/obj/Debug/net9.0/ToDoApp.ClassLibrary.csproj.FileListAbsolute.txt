@@ -1,0 +1,12 @@
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.AssemblyInfoInputs.cache
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.AssemblyInfo.cs
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.csproj.CoreCompileInputs.cache
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\bin\Debug\net9.0\ToDoApp.ClassLibrary.deps.json
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\bin\Debug\net9.0\ToDoApp.ClassLibrary.dll
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\bin\Debug\net9.0\ToDoApp.ClassLibrary.pdb
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.dll
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\refint\ToDoApp.ClassLibrary.dll
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.pdb
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ref\ToDoApp.ClassLibrary.dll
+C:\DEV\PersonalLearning\FundamentalsPractice\ToDoListApplicationFromFundamental\ToDoApplication\ToDoApp.ClassLibrary\obj\Debug\net9.0\ToDoApp.ClassLibrary.csproj.AssemblyReference.cache

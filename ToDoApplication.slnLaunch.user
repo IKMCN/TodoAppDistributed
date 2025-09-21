@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TodoAPI\\TodoAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ConsoleAppHTTPClient\\ConsoleAppHTTPClient.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Todo.Console\\Todo.Console.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
